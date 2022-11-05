@@ -59,16 +59,12 @@ marquee {
     }
 }
 
-.max-width-100 {
-    max-width: 100%;
-}
 .temp {
     width: 100vw;
     display: flex;
 }
-.temp-img2, .temp-img1 {
-    max-width: 100%;
-    margin: 20px;
+.temp div {
+    margin: 10px;
 }
 @media (max-width: 700px) {
     .temp {
@@ -104,17 +100,35 @@ marquee {
     background-color: black;
     color: #fff;
 }
+@media (max-width: 700px) {
+    .news-letter input{
+        width: 70%;
+    }
+}
 /****account****/
 .account div {
     text-align: center;
+    margin: 15px;
 }
 .account div i {
     font-size: 70px;
     margin-bottom: 10px;
 }
 @media (max-width: 700px) {
+    .account div {
+        margin: 0;
+    }
     .account div i {
         font-size: 40px;
+    }
+    .account h5 {
+        font-size: 15px;
+    }
+    .account p {
+        font-size: 13px;
+    }
+    .call {
+        font-size: 1rem
     }
 }
 /***accordian***/
@@ -126,6 +140,11 @@ marquee {
 }
 #accordion .card-header {
     background-color: #fff;
+}
+@media (max-width: 700px) {
+    #accordion h5 {
+        font-size: 1rem;
+    }
 }
 /***social media***/
 .social-media {
