@@ -13,10 +13,18 @@ marquee {
     height: 100%;
     line-height: 50px;
 }
+.bg-white {
+    background-color: #fff;
+}
+.logo img {
+    width: 95px;
+    height: 95px;
+}
 .right-menu ul li {
     list-style-type: none;
     float: left;
     margin-right: 10px;
+    cursor: pointer;
 }
 .right-menu ul li select {
     background-color: #f8f9fa;
@@ -60,6 +68,10 @@ marquee {
     .navbar-toggler.collapsed ~ .navbar-collapse {
       transition: left 0ms ease-in-out;
     }
+    .logo img {
+        width: 75px;
+        height: 75px;
+    }
     .close-btn {
       position: absolute;
       top: 20px;
@@ -70,6 +82,7 @@ marquee {
     }
     .right-menu-icon {
         display: block;
+        cursor: pointer;
     }
 }
 .temp {
@@ -87,6 +100,26 @@ marquee {
         margin: 10px;
     }
 }
+/***product section***/
+.card-block {
+    min-height: 200px;
+}
+/****section eight*****/
+.section-eight div {
+    justify-content: space-evenly;
+}
+.section-eight div div{
+    width: 31%;
+}
+@media (max-width: 700px) {
+    .section-eight div {
+        flex-direction: column;
+    }
+    .section-eight div div{
+        width: 100%;
+    }
+}
+/*********/
 .about-store {
     background-color: #43380a;
     color: #fff;
